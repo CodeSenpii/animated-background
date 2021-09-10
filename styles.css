@@ -50,15 +50,17 @@ body{
 }
 .box-area li:hover{
   background-color: lightblue;
+  animation-play-state: paused;
 }
+
 
 .box-area li:nth-child(1){
   left: 86%;
   width: 80px;
   height: 80px;
   animation-delay:0s;
-  background-image: url("img5.jpg");
-  background-size: cover;
+  /* background-image: url("img5.jpg");
+  background-size: cover; */
 }
 
 .box-area li:nth-child(2){
@@ -67,15 +69,16 @@ body{
   height: 30px;
   animation-delay:1.5s;
   animation-duration: 10s;
+
 }
 .box-area li:nth-child(3){
   left: 70%;
   width: 150px;
   height: 150px;
   animation-delay:5.5s;
-  background-image: url("img4.jpg");
+  /* background-image: url("img4.jpg");
   /* background-position: center; */
-  background-size: cover;
+  /* background-size: cover; */ */
 
 }
 .box-area li:nth-child(4){
@@ -84,17 +87,17 @@ body{
   height: 180px;
   animation-delay:0s;
   animation-duration: 15s;
-  background-image: url("img2.jpg");
-  background-size: cover;
+  /* background-image: url("img2.jpg");
+  background-size: cover; */
 }
 .box-area li:nth-child(5){
   left: 15%;
   width: 50px;
   height: 50px;
   animation-delay:0s;
-  background-image: url("img1.jpg");
+  /* background-image: url("img1.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 
 }
 .box-area li:nth-child(6){
@@ -103,8 +106,8 @@ body{
   height: 140px;
   animation-delay:0s;
   animation-duration: 15s;
-  background-image: url("img3.jpg");
-  background-size: cover;
+  /* background-image: url("img3.jpg");
+  background-size: cover; */
 }
 .animation-area{
   background: linear-gradient(to left, #8942a8, #ba382f);
