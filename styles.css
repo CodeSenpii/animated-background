@@ -46,6 +46,10 @@ body{
   background: rgba(255, 255, 255, 0.3);
   animation: animate 20s linear infinite;
   bottom:-180px;
+  border-radius: 50%;
+}
+.box-area li:hover{
+  background-color: lightblue;
 }
 
 .box-area li:nth-child(1){
