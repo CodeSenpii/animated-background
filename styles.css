@@ -78,7 +78,7 @@ body{
   animation-delay:5.5s;
   /* background-image: url("img4.jpg");
   /* background-position: center; */
-  /* background-size: cover; */ 
+  /* background-size: cover; */
 
 }
 .box-area li:nth-child(4){
@@ -113,6 +113,25 @@ body{
   background: linear-gradient(to left, #8942a8, #ba382f);
    width: 100%;
    height:100vh;
+}
+
+#chn1:active{
+  background-color: pink;
+}
+#chn2:active{
+  background-color: blue;
+}
+#chn3:active{
+  background-color: orange;
+}
+#chn4:active{
+  background-color: red;
+}
+#chn5:active{
+  background-color: violet;
+}
+#chn6:active{
+  background-color: yellow;
 }
 
 @keyframes animate{
