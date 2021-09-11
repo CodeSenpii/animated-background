@@ -39,7 +39,7 @@ body{
 }
 .box-area li{
   position:absolute;
-  display: block;
+  display: flex;
   list-style: none;
   width: 25px;
   height:25px;
@@ -47,11 +47,17 @@ body{
   animation: animate 20s linear infinite;
   bottom:-180px;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+
 }
 .box-area li:hover{
   background-color: lightblue;
   animation-play-state: paused;
 }
+
+
 
 
 .box-area li:nth-child(1){
@@ -117,9 +123,11 @@ body{
 
 #chn1:active{
   background-color: pink;
+
 }
 #chn2:active{
   background-color: blue;
+
 }
 #chn3:active{
   background-color: orange;
