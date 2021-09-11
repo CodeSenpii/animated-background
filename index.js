@@ -6,7 +6,8 @@ var audio4 = new Audio("audio4.wav");
 var audio5 = new Audio("audio5.wav");
 var audio6 = new Audio("audio6.wav");
 
-console.log(d[0].innerHTML);
+// console.log(d[0].innerHTML);
+console.log(d[0].id);
 
 d[0].onclick = function(){
   audio1.play();
