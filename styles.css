@@ -55,16 +55,24 @@ body{
 .box-area li:hover{
   background-color: lightblue;
   animation-play-state: paused;
-  
 }
 
-.box-area li:nth-child(1){
+/* .box-area li:nth-child(1){
   left: 86%;
   width: 80px;
   height: 80px;
   animation-delay:0s;
-  /* background-image: url("img5.jpg");
-  background-size: cover; */
+} */
+
+#chn1{
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay:0s;
+}
+
+.visibility{
+  visibility: hidden;
 }
 
 
