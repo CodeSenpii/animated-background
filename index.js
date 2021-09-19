@@ -2,12 +2,12 @@ var d = document.querySelectorAll('.animation-area li');
 var c = document.querySelectorAll('#chn1').classList;
 
 var timer;
-var audio1 = new Audio("audio1.wav");
-var audio2 = new Audio("audio2.wav");
-var audio3 = new Audio("audio3.wav");
-var audio4 = new Audio("audio4.wav");
-var audio5 = new Audio("audio5.wav");
-var audio6 = new Audio("audio6.wav");
+var audio1 = new Audio("a1.wav");
+var audio2 = new Audio("a2.wav");
+var audio3 = new Audio("a3.wav");
+var audio4 = new Audio("a1.wav");
+var audio5 = new Audio("a2.wav");
+var audio6 = new Audio("a3.wav");
 
 function reset(index){
 timer =   setTimeout(function(){
