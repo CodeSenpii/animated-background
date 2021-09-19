@@ -1,4 +1,4 @@
-var d = document.querySelectorAll('.animation-area li');
+var d = document.querySelectorAll('.box-area li');
 var c = document.querySelectorAll('#chn1').classList;
 
 var timer;
