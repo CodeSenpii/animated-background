@@ -1,8 +1,30 @@
+//jshint  esversion:6
+
 var d = document.querySelectorAll('.box-area li');
 var c = document.querySelectorAll('#chn1').classList;
 var score = document.querySelectorAll('li span');
 var emoj = document.querySelectorAll('.emoji-icon li');
 var count = 0;
+
+const emojis = ['🙈','⚽','🎌','💦','🦊','🦮','🎃'];
+const size = [40, 49, 59, 69, 90, 120, 130];
+const pos = [10, 20, 30, 35, 45, 55, 76, 80, 90];
+
+
+function bubble(){
+
+  var e = emojis[Math.floor(Math.random() * 8)];
+  var s = size[Math.floor(Math.random() * 8)];
+  var p = pos[Math.floor(Math.random() * 10)];
+
+  var c7 = document.querySelector('#chn7');
+  c7.textContent = e;
+  c7.style.height = s + 'px';
+  c7.style.width = s + 'px';
+  c7.style.left = p + '%';
+  // console.log(c7);
+}
+
 
 console.log(emoj[0].firstChild.textContent === "🤪 ");
 
@@ -15,7 +37,7 @@ var audio5 = new Audio("a2.wav");
 var audio6 = new Audio("a3.wav");
 
 function reset(index){
-timer =   setTimeout(function(){
+timer =  setTimeout(function(){
   d[index].style.display = "flex";
 }, 1000);}
 
@@ -85,4 +107,14 @@ d[5].onclick = function(){
   v = v + 1;
   score[5].innerText = v;
   reset(5);
+};
+
+d[6].onclick = function(){
+  audio1.play();
+  d[6].style.display = "none";
+  // var v = Number(score[6].innerText);
+  // v = v + 1;
+  // score[6].innerText = v;
+  bubble();
+   reset(6);
 };

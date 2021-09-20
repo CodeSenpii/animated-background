@@ -123,6 +123,15 @@ body{
   /* background-image: url("img3.jpg");
   background-size: cover; */
 }
+
+.box-area li:nth-child(7){
+  left: 76%;
+  width: 40px;
+  height: 40px;
+  animation-delay:1s;
+}
+
+
 .animation-area{
   background: linear-gradient(to left, #8942a8, #ba382f);
    width: 100%;
@@ -148,6 +157,9 @@ body{
 }
 #chn6:active{
   background-color: yellow;
+}
+#chn7:active{
+  background-color: skyblue;
 }
 
 @keyframes animate{
