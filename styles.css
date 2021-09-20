@@ -19,7 +19,7 @@ body{
 
 .banner-text ul li{
   display: inline-block;
-  padding: 40px 15px;
+  padding: 10px 15px;
   text-transform: uppercase;
   color: #fff;
   font-size: 20px;
@@ -129,6 +129,16 @@ body{
   width: 40px;
   height: 40px;
   animation-delay:1s;
+}
+.box-area li:nth-child(8){
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  animation-delay:0s;
+  animation-duration: 6s;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.5em;
 }
 
 
