@@ -1,5 +1,10 @@
 var d = document.querySelectorAll('.box-area li');
 var c = document.querySelectorAll('#chn1').classList;
+var score = document.querySelectorAll('li span');
+var emoj = document.querySelectorAll('.emoji-icon li');
+var count = 0;
+
+console.log(emoj[0].firstChild.textContent === "🤪 ");
 
 var timer;
 var audio1 = new Audio("a1.wav");
@@ -15,6 +20,8 @@ timer =   setTimeout(function(){
 }, 1000);}
 
 
+
+
 // console.log(bubble);
 
 // console.log(d[0].innerHTML);
@@ -25,6 +32,13 @@ d[0].onclick = function(){
   audio1.play();
   d[0].style.display = "none";
   // d[0].style.display = "flex";
+  // console.log(d[0].textContent);
+  // var icon = d[0].textContent;
+  var v = Number(score[0].innerText);
+  v = v + 1;
+  score[0].innerText = v;
+
+
   reset(0);
 };
 
@@ -33,27 +47,42 @@ d[1].onclick = function(){
   console.log(this.textContent);
   // d[0].style.visibility = "initial";
   d[1].style.display = "none";
+  var v = Number(score[1].innerText);
+  v = v + 1;
+  score[1].innerText = v;
   reset(1);
 
 };
 d[2].onclick = function(){
   audio3.play();
   d[2].style.display = "none";
+  var v = Number(score[2].innerText);
+  v = v + 1;
+  score[2].innerText = v;
   reset(2);
 };
 d[3].onclick = function(){
   audio4.play();
   d[3].style.display = "none";
+  var v = Number(score[3].innerText);
+  v = v + 1;
+  score[3].innerText = v;
   reset(3);
 };
 
 d[4].onclick = function(){
   audio5.play();
   d[4].style.display = "none";
+  var v = Number(score[4].innerText);
+  v = v + 1;
+  score[4].innerText = v;
   reset(4);
 };
 d[5].onclick = function(){
   audio6.play();
   d[5].style.display = "none";
+  var v = Number(score[5].innerText);
+  v = v + 1;
+  score[5].innerText = v;
   reset(5);
 };
