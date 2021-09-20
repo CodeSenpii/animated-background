@@ -1,9 +1,11 @@
-*{
+/* *{
   margin:0;
   padding:0;
-}
+} */
 body{
   font-family: Baloo;
+  margin: 0;
+  padding: 0;
 }
 .banner-text{
   width: 100%;
