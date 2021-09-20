@@ -9,19 +9,22 @@ var count = 0;
 const emojis = ['🙈','⚽','🎌','💦','🦊','🦮','🎃'];
 const size = [40, 49, 59, 69, 90, 120, 130];
 const pos = [10, 20, 30, 35, 45, 55, 76, 80, 90];
+const duration = [2, 3, 5, 3, 5, 2, 15, 3, 19];
 
 
 function bubble(){
 
-  var e = emojis[Math.floor(Math.random() * 8)];
-  var s = size[Math.floor(Math.random() * 8)];
-  var p = pos[Math.floor(Math.random() * 10)];
+  var e = emojis[Math.floor(Math.random() * 7)];
+  var s = size[Math.floor(Math.random() * 7)];
+  var p = pos[Math.floor(Math.random() * 9)];
+  var du = duration[Math.floor(Math.random() * 9)];
 
   var c7 = document.querySelector('#chn7');
   c7.textContent = e;
   c7.style.height = s + 'px';
   c7.style.width = s + 'px';
   c7.style.left = p + '%';
+  c7.style.animationDuration = du + 's';
   // console.log(c7);
 }
 
