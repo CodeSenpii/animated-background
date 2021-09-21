@@ -131,7 +131,7 @@ body{
   animation-delay:1s;
 }
 .box-area li:nth-child(8){
-  left: 50%;
+  left: 45%;
   width: 140px;
   height: 140px;
   animation-delay:0s;
