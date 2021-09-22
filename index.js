@@ -56,14 +56,18 @@ function myTimer(){
   if(count === 11){
     document.querySelector('p').style.color = 'red';
   }
-  if(count === 0){
-    document.querySelector('p').innerText = 'STOP';
+  if(count === 1){
     clearInterval(counter);
     console.log('STOP');
 
   }
   count = count - 1;
   document.querySelector('p').innerText = count;
+
+  if(count === 0){
+    document.querySelector('p').innerText = 'STOP';
+    offBubble();
+  }
 }
 
 function reset(index) {
