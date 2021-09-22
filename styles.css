@@ -56,7 +56,7 @@ body{
 }
 .box-area li:hover{
   background-color: lightblue;
-  animation-play-state: paused;
+  /* animation-play-state: paused; */
 }
 
 /* .box-area li:nth-child(1){
