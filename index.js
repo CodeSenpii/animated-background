@@ -10,9 +10,9 @@ var mainScore = document.querySelector('#wild-card span');
 var count = 0;
 
 const emojis = ['🙈', '⚽', '🎌', '💦', '🦊', '🦮', '🎃', '❤️','🌻'];
-const size = [40, 49, 59, 69, 90, 120, 130];
+const size = [50, 59, 59, 69, 90, 120, 80];
 const pos = [10, 20, 30, 35, 45, 55, 76, 80, 90];
-const duration = [2, 2, 1, 2, 2, 2 , 5, 2, 2];
+const duration = [2, 2, 1, 2, 2, 2 , 5, 2, 3];
 
 
 function bubble() {
@@ -33,7 +33,6 @@ function bubble() {
 
   // console.log(c7);
 }
-
 
 // console.log(emoj[0].firstChild.textContent === "🤪 ");
 var timer;
