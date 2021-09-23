@@ -49,6 +49,7 @@ var audio6 = new Audio("a3.wav");
 var laugh = new Audio("laugh.wav");
 var gameOver = new Audio("over.wav");
 var haha = new Audio("haha.wav");
+var clown = [new Audio("clown1.wav"), new Audio("clown2.mp3")];
 // var bubbling_bg = new Audio("bubbling.wav");
 
 // var counter = setInterval(myTimer, 1000);
@@ -182,7 +183,10 @@ d[5].onclick = function() {
 d[6].onclick = function() {
   audio1.play();
   d[6].style.display = "none";
-
+  var select = Math.floor((Math.random() * 2));
+  setTimeout(()=>{
+    clown[select].play();
+  }, 400);
   var v = Number(mainScore.innerText);
   v = v + 1;
   mainScore.innerText = v;
