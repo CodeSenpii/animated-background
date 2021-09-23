@@ -48,6 +48,7 @@ var audio5 = new Audio("a2.wav");
 var audio6 = new Audio("a3.wav");
 var laugh = new Audio("laugh.wav");
 var gameOver = new Audio("over.wav");
+var haha = new Audio("haha.wav");
 // var bubbling_bg = new Audio("bubbling.wav");
 
 // var counter = setInterval(myTimer, 1000);
@@ -100,6 +101,8 @@ offBubble();
 d[0].onclick = function() {
   audio1.play();
   d[0].style.display = "none";
+  setTimeout(()=> {
+    haha.play();}, 500);
   // d[0].style.display = "flex";
   // console.log(d[0].textContent);
   // var icon = d[0].textContent;
@@ -114,6 +117,8 @@ d[0].onclick = function() {
 d[1].onclick = function() {
   audio2.play();
   console.log(this.textContent);
+  setTimeout(()=> {
+    haha.play();}, 500);
   // d[0].style.visibility = "initial";
   d[1].style.display = "none";
   mainScore.innerText = Number(mainScore.innerText)  - 1;
@@ -127,6 +132,8 @@ d[1].onclick = function() {
 d[2].onclick = function() {
   audio3.play();
   d[2].style.display = "none";
+  setTimeout(()=> {
+    haha.play();}, 500);
   mainScore.innerText = Number(mainScore.innerText)  - 1;
   var v = Number(score[2].innerText);
   v = v + 1;
@@ -137,6 +144,8 @@ d[2].onclick = function() {
 d[3].onclick = function() {
   audio4.play();
   d[3].style.display = "none";
+  setTimeout(()=> {
+    haha.play();}, 500);
   mainScore.innerText = Number(mainScore.innerText)  - 1;
   var v = Number(score[3].innerText);
   v = v + 1;
@@ -148,6 +157,8 @@ d[3].onclick = function() {
 d[4].onclick = function() {
   audio5.play();
   d[4].style.display = "none";
+  setTimeout(()=> {
+    haha.play();}, 500);
   mainScore.innerText = Number(mainScore.innerText)  - 1;
   var v = Number(score[4].innerText);
   v = v + 1;
@@ -158,6 +169,8 @@ d[4].onclick = function() {
 d[5].onclick = function() {
   audio6.play();
   d[5].style.display = "none";
+  setTimeout(()=> {
+    haha.play();}, 500);
   mainScore.innerText = Number(mainScore.innerText)  - 1;
   var v = Number(score[5].innerText);
   v = v + 1;
@@ -169,6 +182,7 @@ d[5].onclick = function() {
 d[6].onclick = function() {
   audio1.play();
   d[6].style.display = "none";
+
   var v = Number(mainScore.innerText);
   v = v + 1;
   mainScore.innerText = v;
