@@ -2,8 +2,13 @@
 
 var t = 0;
 while (t < 20 | t > 100){
-  t = prompt('Enter Time between 20s and 100s:');
+  t = Number(prompt('Enter Time: A Number between 20 and 100'));
+  if(isNaN(t)){
+    t = 0;
+  }
 }
+
+
 document.querySelector('p').innerText = t;
 
 
