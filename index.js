@@ -1,5 +1,12 @@
 //jshint  esversion:6
 
+var t = 0;
+while (t < 20){
+  t = prompt('Enter Time between 20s and 100s:');
+}
+document.querySelector('p').innerText = t;
+
+
 var d = document.querySelectorAll('.box-area li');
 var c = document.querySelectorAll('#chn1').classList;
 var score = document.querySelectorAll('li span');
