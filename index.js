@@ -1,7 +1,7 @@
 //jshint  esversion:6
 
 var t = 0;
-while (t < 20){
+while (t < 20 | t > 100){
   t = prompt('Enter Time between 20s and 100s:');
 }
 document.querySelector('p').innerText = t;
