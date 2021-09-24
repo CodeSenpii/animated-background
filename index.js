@@ -104,6 +104,11 @@ function onBubble(){
   for (var x = 0; x < 7; x++) {
     d[x].style.display = "flex";
   }
+    setTimeout(()=>{
+      bgMusic.play();
+    }, 1000);
+
+  // bgMusic.play();
 }
 offBubble();
 // console.log(bubble);
@@ -214,8 +219,6 @@ d[7].onclick = function() {
   laugh.play();
   d[7].style.display = "none";
   onBubble();
-  setTimeout(()=>{
-    bgMusic.play();
-  }, 400);
+
   counter = setInterval(myTimer, 1000);
 };
