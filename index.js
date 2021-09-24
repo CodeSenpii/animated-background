@@ -62,6 +62,7 @@ var laugh = new Audio("laugh.wav");
 var gameOver = new Audio("over.wav");
 var haha = new Audio("haha.wav");
 var clown = [new Audio("clown1.wav"), new Audio("clown2.mp3")];
+var bgMusic = new Audio("underwater1.wav");
 // var bubbling_bg = new Audio("bubbling.wav");
 
 // var counter = setInterval(myTimer, 1000);
@@ -192,6 +193,7 @@ d[5].onclick = function() {
 
 };
 
+// joker bubble
 d[6].onclick = function() {
   audio1.play();
   d[6].style.display = "none";
@@ -207,9 +209,13 @@ d[6].onclick = function() {
   reset(6);
 };
 
+// start bubble
 d[7].onclick = function() {
   laugh.play();
   d[7].style.display = "none";
   onBubble();
+  setTimeout(()=>{
+    bgMusic.play();
+  }, 400);
   counter = setInterval(myTimer, 1000);
 };
