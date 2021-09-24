@@ -154,7 +154,8 @@ p{
 
 
 .animation-area{
-  background: linear-gradient(to left, #8942a8, #ba382f);
+  /* background: linear-gradient(to left, #8942a8, #ba382f); */
+  background: linear-gradient(to left, #0000ff, #6495ed);
    width: 100%;
    height:100vh;
 }
