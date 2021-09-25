@@ -98,12 +98,18 @@ function offBubble() {
   for (var x = 0; x < 7; x++) {
     d[x].style.display = "none";
   }
+  // for(var y = 9; x < 17; y++){
+  //   d[y].style.display = "none";
+  // }
 }
 
 function onBubble(){
   for (var x = 0; x < 7; x++) {
     d[x].style.display = "flex";
   }
+  // for(var y = 9; x < 17; y++){
+  //   d[y].style.display = "flex";
+  // }
     setTimeout(()=>{
       bgMusic.play();
     }, 1000);
